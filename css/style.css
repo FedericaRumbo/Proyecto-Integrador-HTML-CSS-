@@ -80,6 +80,10 @@ header {
     font-size: 23px;
 }
 
+.navbar-list a:hover{
+    color: rgba(255, 255, 255, 0.801);
+}
+
 .cuenta {
     display: flex;
     flex-direction: row;
@@ -396,27 +400,6 @@ header {
    font-size: 60px;
    position: relative;
 }
-
-.figura-title {
-    height: 105px;
-    width: 105px;
-    border: 20px solid #c9442a;
-    border-radius: 50%;
-    right: 40%;
-    top: 210%;
-    position: absolute;
-    z-index: -1;
-}
-
-.figura-title2 {
-    height: 95px;
-    width: 100px;
-    background-color: #6db1b5;
-    position: absolute;
-    right: 58%;
-    top: 210%;
-    z-index: -1;
- }
 
 .dioses-container {
     display: flex;
