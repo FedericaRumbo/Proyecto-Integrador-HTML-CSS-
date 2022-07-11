@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    background: #000;
+    /*background: #390600;  /* fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #000, #390600);   
+    background: linear-gradient(to right, #000, #390600); */
+    height: 100%;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.form-container {
+    background: rgb(222, 222, 222);
+    color: #000;
+    width: 500px;
+    border-radius: 20px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -55%);
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.input-container h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: rgb(104, 6, 6);
+    text-transform: uppercase;
+}
+
+.img-login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15%;
+    gap: 30%;
+}
+
+.input-container label {
+    font-size: 20px;
+}
+
+.input-container a {
+    color: rgba(0, 0, 0, 0.703);
+    text-align: center;
+}
+
+#email, #pass {
+    border-radius: 15px;
+    border: 1px solid rgb(104, 6, 6);
+    padding: 7px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+
+#email, #pass:focus{
+    outline: none;
+}
+
+.btn-sign {
+    margin-top: 50px;
+    background: rgb(104, 6, 6);
+    color: #fff;
+    border: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-sign:hover {
+    background: #000;
+    transition: all 0.5s linear;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-container a {
+    color: rgba(0, 0, 0, 0.703);
+    text-decoration: underline;
+}
+
+@media(max-width: 768px) {
+
+    .form-container {
+        width: 90vw;
+        max-width: 100%;
+        transform: translate(-50%, -55%);
+    }
+
+    .input-container h2 {
+        font-size: 25px;
+    }
+
+    .img-login {
+        display: none;
+    }
+    .input-container label {
+        font-size: 15px;
+    }
+
+    #email, #pass, #user, #name {
+        padding: 5px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 15px;
+    }
+
+    .btn-sign {
+        font-size: 17px;
+    }
+}
+
