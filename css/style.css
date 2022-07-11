@@ -297,7 +297,6 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    overflow-x: hidden;
   }
 
   .section-title {
@@ -367,6 +366,7 @@ header {
         justify-content: center;
         position: absolute;
         top: auto;
+        overflow-x: hidden;
     }
 
     .section-title {
