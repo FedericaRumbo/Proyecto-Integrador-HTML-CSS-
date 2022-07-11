@@ -46,7 +46,6 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 0px 50px 0px 0px;
-    overflow-x: hidden;
 }
 
 .logo-container {
@@ -120,6 +119,7 @@ header {
 
     .navbar img {
         display: flex;
+
     }
 
     .navbar-list {
@@ -132,6 +132,7 @@ header {
         height: calc(100vh - 100px);
         z-index: 9999;
         display: none;
+    
     }
 
     .nav-toggle img {
@@ -296,9 +297,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    will-change: transform;
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-    transform-style: preserve-3d;
+    overflow-x: hidden;
   }
 
   .section-title {
